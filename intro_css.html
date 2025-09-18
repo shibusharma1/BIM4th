@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Intro to css</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libertinus+Serif:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Mozilla+Text:wght@200..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- external css -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Internal CSS -->
+    <style>
+      /* universal selector */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 60;
+        font-style: normal;
+        font-variation-settings: "wdth" 100;
+      }
+      /* body{
+            background-image: url(image.png);
+            background-repeat: repeat-x;
+        } */
+      /* element selector */
+      h2 {
+        color: blue;
+        padding: 5px;
+      }
+      /* class selector */
+      .heading-3 {
+        color: green;
+      }
+      /* Id selector */
+      #heading-4 {
+        color: blueviolet;
+      }
+      /* button css */
+      .login-btn {
+        background-color: blueviolet;
+        color: white;
+        border-radius: 5px;
+      }
+      .login-btn:hover {
+        background-color: white;
+        color: blueviolet;
+        border: 2px solid blueviolet;
+      }
+      div {
+        /* background-image: url('image.png'); */
+        height: 500px;
+        width: 500px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Inline css -->
+    <h1 style="color: red">Heading 1 Inline Css</h1>
+    <!-- internal css -->
+    <h2>Heading 2 Internal CSS</h2>
+    <h3 class="heading-3">Heading 3 class selector</h3>
+    <h4 id="heading-4">Heading 4 ID selector</h4>
+
+    <!-- external css -->
+    <h5 class="external-css">heading 5 External Css</h5>
+
+    <button class="login-btn">Login</button>
+    <div></div>
+  </body>
+</html>
